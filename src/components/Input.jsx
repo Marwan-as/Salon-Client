@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 
-// Use forwardRef to allow react-hook-form to access the inner <input>
 const Input = forwardRef(({ error, caution, label, labelAddon, className, ...rest }, ref) => {
   return (
     <div className="form-control w-full">
@@ -12,7 +11,7 @@ const Input = forwardRef(({ error, caution, label, labelAddon, className, ...res
 
       {/* Input Field */}
       <input
-        ref={ref} // Attach the ref here
+        ref={ref} 
         className={`input input-bordered w-full rounded-2xl bg-gray-50 border-gray-200 focus:ring-4 focus:ring-primary/10 transition-all duration-300 
           ${error ? "border-error bg-red-50 text-error" : "focus:border-primary text-gray-800"} 
           ${className}`}
@@ -31,6 +30,6 @@ const Input = forwardRef(({ error, caution, label, labelAddon, className, ...res
   );
 });
 
-Input.displayName = "Input"; // Good practice for debugging
+Input.displayName = "Input"; 
 
 export default Input;
