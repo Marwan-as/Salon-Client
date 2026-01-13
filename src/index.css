@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: forest, business, luxury, sunset, silk, abyss --default, nord;
+}
+
+.glow {
+  color: #00ffea; 
+  text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffee;
+}
